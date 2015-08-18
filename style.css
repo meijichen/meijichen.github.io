@@ -1,0 +1,39 @@
+header{
+  font-size: 300%;
+  color:#31939A;
+  text-align: center;
+  margin-top: 50px
+
+}
+
+div.links{
+  float:left;
+  margin: 20px;
+  width: 1200px;
+}
+
+article.page{
+  float: left;
+  text-align: center;
+  border:  2px;
+  border-style: solid;
+  border-color:#2b3f3f;
+  background: #31939A;
+  color: #edfffe;
+  padding: 3px;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 10px;
+  display: inline;
+  width: 250px;
+
+}
+
+img{
+  float:left;
+}
+
+p{margin-top: 70px;
+padding: 60px;}
+
+a {text-decoration: none}
