@@ -1,5 +1,5 @@
 # meijichen.github.io
 
-meijichen.github.io
+http://meijichen.github.io/
 
-meijichen.github.io/POS-project
+http://meijichen.github.io/POS-project
