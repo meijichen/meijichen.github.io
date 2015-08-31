@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/sal.css">
+<title>Sal's </title>
+</head>
+
+<body>
+  <header>
+  <h1>Meiji's Vineyard</h1>
+  </header>
+
+<main class='container'>
+  <div class='column1'>
+  <h4>Wine List</h4>
+
+
+    <div class='menu-container'>
+      <ul id='wine-types' class="row clearfix">
+
+        <!-- types go here -->
+      </ul>
+    </div>
+  </div>
+
+  <div class='column2'>
+    <div id='order-list'>
+      <h4>Order List</h4>
+
+
+       <!-- List of ordered items. -->
+
+    </div>
+    <section class='reciept'>
+      <h4>Sales</h4>
+
+      <ul class='costul'>
+        <li class='cost' id= 'subtotal'> Subtotal: <input id='subtotal2'></li>
+        <li class='cost' id= 'discount-rate'> Discount (%): <input id=discount-rate2 value = 0 placeholder = "enter discount %"></input></li>
+        <li class='cost' id=totalAfterDiscount>Adjusted Total:<input id=discountedTotal></li>
+        <li class='cost' id= 'tax-rate'>NYC tax: 8.875%</li>
+        <li class='cost' id= 'grand-total'>Total: <input id='grand-total2'></li>
+      </ul>
+    </section>
+    <div>
+      <button id="submit-order" class="button">SUBMIT</button>
+    </div>
+  </div>
+  </main>
+
+  <footer id="sales-summary">
+    <h4>Sales Log</h4>
+    <ul class='sales' id='sales-list'>
+  </footer>
+
+  <script src="/script/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src='/script/sal.js'></script>
+</body>
+
+</html>
