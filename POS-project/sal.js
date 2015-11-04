@@ -56,6 +56,7 @@ var grandTotal;
 var orderButtonID;
 var $OrderedItems;
 var submittedOrdersArray = [];
+var $orderbutton;
 
 //Function function....
 
@@ -107,7 +108,7 @@ function saveOrder(){
     console.log(submittedOrdersArray);
     console.log(orderNumber);
     $purchaseLi = $('<li>', {class:'purchase', id:orderNumber+'-li'});
-    var $orderbutton = $('<button>',{class:'order-num-button', id:'button'+orderNumber}).text('Order#: '+orderNumber);
+    $orderbutton = $('<button>',{class:'order-button', id:'button'+orderNumber}).text('Order#: '+orderNumber);
     $purchaseLi.append($orderbutton);
     $('#sales-list').append($purchaseLi);
     ulCart.empty();
@@ -120,8 +121,11 @@ function saveOrder(){
 
 //retrieve order function ----- does not order
 function retrieveOrder(){
-$('.order-num-button').on('click',function(event){
+$('.order-button').on('click',function(event){
+  alert (event.target);
+  console.log('clicked')
 var orderTextID = $(event.currentTarget).attr('id');
+console.log('orderTextID')
 var orderButtonIDArray = orderButtonID.split("");
 var orderID = orderButtonIDArray[orderButtonIDArray.length-1]
 ulBrands.append(submittedOrdersArray[orderID]);
